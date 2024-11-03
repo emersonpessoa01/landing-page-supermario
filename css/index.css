@@ -51,6 +51,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    gap:20px;
 }
 /* A navegação usa um layout flexível, ocupando 100% da largura, com os itens distribuídos de maneira uniforme. */
 
@@ -66,7 +67,7 @@ header {
     font-weight: 300;
     letter-spacing: 1px;
     cursor: pointer;
-    padding: 10px;
+    padding: 0 40px;
 }
 /* Os links na navegação são brancos, sem sublinhado, com texto em maiúsculas, peso de fonte leve (300), espaçamento entre letras de 1px, e um cursor de ponteiro. */
 
@@ -94,6 +95,7 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
+    font-size: 16px;
     color: #ffffff;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -145,9 +147,11 @@ header {
 .swiper .swiper-wrapper .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    z-index: -2;
 }
 /* As imagens dentro dos slides são ajustadas para cobrir toda a área e são centralizadas. */
 
@@ -362,3 +366,179 @@ header {
     max-height: 250px;
 }
 /* O iframe à direita do banner tem largura máxima de 450px e altura máxima de 250px. */
+
+
+/* Desktop grande (1200px e acima) */
+@media screen and (min-width: 1200px) {
+    .banner {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .banner h1 {
+        font-size: 5em;
+    }
+
+    .banner .right iframe {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+/* Desktop médio (992px a 1199px) */
+@media screen and (max-width: 1199px) {
+    .banner {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .banner h1 {
+        font-size: 4em;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .banner img {
+        width: 45vw;
+    }
+
+    .banner .right iframe {
+        width: 400px;
+        height: 225px;
+    }
+}
+
+/* Tablet (768px a 991px) */
+@media screen and (max-width: 991px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    .nav {
+        display: none; /* Adicionar menu hamburger aqui */
+    }
+
+    .search {
+        width: 100px;
+    }
+
+    .search:hover {
+        width: 200px;
+    }
+
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 4%;
+    }
+
+    .banner h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .banner img {
+        width: 60vw;
+        margin: 30px auto;
+        position: absolute;
+        z-index: -2;
+    }
+
+
+    .banner .left, .banner .right {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner .right iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 200px;
+    }
+
+    .banner .right .description {
+        padding: 30px 0;
+    }
+}
+
+/* Mobile (até 767px) */
+@media screen and (max-width: 767px) {
+    header {
+        padding: 10px 3%;
+    }
+
+    .logo img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .search {
+        width: 80px;
+    }
+
+    .search:hover {
+        width: 150px;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner .left .features {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .swiper .swiper-wrapper .swiper-slide .banner img {
+        width: 80vw;
+        position:absolute;
+        z-index: -1;
+    }
+
+    .banner .right h2 {
+        font-size: 2em;
+    }
+
+    .banner .right .description h4 {
+        font-size: 1.1em;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        top: auto;
+        bottom: 20px;
+        transform: none;
+    }
+
+    .swiper .swiper-button-prev {
+        left: 20px;
+        top: 50%;
+    }
+    
+    .swiper .swiper-button-next {
+        top: 50%;
+        right: 20px;
+    }
+}
+
+/* Mobile pequeno (até 479px) */
+@media screen and (max-width: 479px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner .left .features .rating .score {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
+
+    .banner .right h2 {
+        font-size: 1.5em;
+    }
+
+    .banner .right iframe {
+        height: 160px;
+    }
+}
