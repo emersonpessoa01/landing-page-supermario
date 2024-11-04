@@ -131,6 +131,9 @@ header {
 .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 
 }
 /* Cada slide no swiper ocupa toda a largura e altura disponíveis. */
@@ -149,9 +152,8 @@ header {
 .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
   position: absolute;
   z-index: -2;
 }
