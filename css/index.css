@@ -123,13 +123,13 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /* O contêiner dos slides no swiper tem largura e altura totais, sem margens ou preenchimentos. */
 
 .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /* Cada slide no swiper ocupa toda a largura e altura disponíveis. */
 
@@ -147,7 +147,7 @@ header {
 .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   object-position: center;
   position: absolute;
