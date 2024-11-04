@@ -16,6 +16,7 @@ htmt,body {
   width: 100%;
   height: 100%;
   margin:0;
+  overflow:hidden;
 }
 /* Define o corpo da página com posição relativa, cor de fundo preta, usa a fonte 'Roboto', ocupa 100% da largura e tem altura mínima de 100vh, com overflow oculto. */
 
