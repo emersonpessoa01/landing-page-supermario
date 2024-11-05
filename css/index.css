@@ -8,17 +8,15 @@
 :root {
   --primary: #ff0000;
 }
+
+
 /* Define a cor vermelha como uma variável CSS chamada --primary. */
 body {
-  position: relative;
   background-color: #000000;
   font-family: "Roboto", sans-serif;
-  width: 100vw; /* Ajuste de 100% para 100vw */
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll; /* Garante que o scroll vertical sempre estará visível */
-  overflow-x: hidden; 
+  overflow-x: hidden; /* Evita scroll horizontal */
+  overflow-y: hidden; /* Oculta qualquer conteúdo extra */
+
 }
 
 /* Define o corpo da página com posição relativa, cor de fundo preta, usa a fonte 'Roboto', ocupa 100% da largura e tem altura mínima de 100vh, com overflow oculto. */
@@ -41,15 +39,17 @@ body {
 } */
 
 header {
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 100px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  right: 0;
   z-index: 2;
 }
 /* O cabeçalho está posicionado de forma absoluta no topo e à esquerda, ocupando 100% da largura, com um layout flexível, espaçamento interno de 20px nas laterais, borda inferior semitransparente e z-index 20. */
@@ -91,6 +91,7 @@ header {
   padding: 0 40px;
   width: 100%;
   line-height: 27px;
+  display: block;
 }
 /* Os links na navegação são brancos, sem sublinhado, com texto em maiúsculas, peso de fonte leve (300), espaçamento entre letras de 1px, e um cursor de ponteiro. */
 
@@ -146,17 +147,15 @@ header {
 }
 
 .swiper {
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto !important;
+  width: 100vw; /* Garante que ocupe toda a largura da tela */
+  height: 100vh; /* Altura total da viewport */
+  overflow-y: hidden; /* Oculta qualquer conteúdo extra */
 }
 /* O swiper (carrossel) ocupa 100% da largura e altura total da tela. */
 
 .swiper .swiper-wrapper {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 .swiper .swiper-wrapper::before {
   position: absolute;
@@ -176,8 +175,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  overflow: hidden;
 }
 /* Cada slide no swiper ocupa toda a largura e altura disponíveis. */
 
@@ -194,7 +191,6 @@ header {
 /* Adiciona uma camada semitransparente preta sobre cada slide. */
 
 .swiper .swiper-wrapper .swiper-slide img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -210,7 +206,7 @@ header {
   left: 0;
   width: 100%;
   height: auto;
-  padding: 100px;
+  /* padding: 100px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -220,14 +216,10 @@ header {
 /* O banner dentro dos slides ocupa 100% da largura, tem altura mínima de 100vh, usa layout flexível para centralizar seu conteúdo horizontal e verticalmente. */
 
 .swiper .swiper-wrapper .swiper-slide .banner img {
-  position: absolute;
-  max-width: 700px;
-  width: 54vw;
-  height: auto;
-  transform: translateX(-50%);
-  z-index: 1;
-  left: 50%;
-  opacity: 0.8;
+  max-width: 790px;
+  max-height: 790px;
+  width: 50%;
+  height: 50%;
 }
 /* As imagens dentro do banner são centralizadas horizontalmente e têm largura máxima de 700px. */
 
@@ -451,6 +443,7 @@ header {
   .banner {
     padding-left: 4%;
     padding-right: 4%;
+    margin: 0;
   }
 
   .banner h1 {
@@ -459,7 +452,7 @@ header {
   .swiper .swiper-wrapper .swiper-slide .banner {
     height: auto;
     padding: 100px;
-    margin-top:100px;
+    margin-top: 100px;
   }
   .swiper .swiper-wrapper .swiper-slide .banner img {
     width: 45vw;
@@ -472,7 +465,7 @@ header {
   .banner .right iframe {
     /* width: 400px; */
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -484,35 +477,44 @@ header {
   #menu-btn {
     display: inline-block;
     transition: 0.2s linear;
+    margin-right: 24px;
   }
   #menu-btn.fa-times {
     transform: rotate(180deg);
   }
-  .navbar .nav{
+  .navbar {
     position: absolute;
-    top:100%;
-    left:0;
-    right: 0;
-    background: #fff;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    padding: 2rem 9%;
-  
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: .2s linear;
-  }
-  .navbar .nav.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  .nav{
-    flex-direction: column;
-  }
-  .nav ul li a {
-    color:blue !important;
-    font-size: 1.5rem;
-    display: block;
+    top: 84px;
+    right: -100%;
+    height: 100vh;
+    width: 300px;
+    background: #222;
+    transition: right 0.3s ease;
+    padding-top: 60px;
+    z-index: 2;
+    transition: right 0.6s ease;
   }
 
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+  }
+  .navbar ul li {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .nav li a {
+    color: var(--primary) !important;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 40px;
+    width: 100%;
+    display: block;
+  }
+  .navbar.show {
+    right: 0;
+  }
   .search {
     width: 100px;
   }
@@ -534,8 +536,9 @@ header {
   .swiper .swiper-wrapper .swiper-slide .banner {
     flex-direction: column;
     justify-content: center;
-    padding: 100px 4%;
-    height: 900px;
+    /* padding: 100px 4%; */
+    min-height:100vh;
+    margin: 0;
   }
 
   .banner h1 {
@@ -568,8 +571,9 @@ header {
     z-index: -2;
   }
   .swiper .swiper-wrapper .swiper-slide .banner {
-    padding-left: 0;
+    /* padding-left: 0;
     padding-right: 0;
+    margin: 0; */
   }
 
   .swiper .swiper-wrapper .swiper-slide .banner img {
@@ -603,6 +607,9 @@ header {
 @media screen and (max-width: 767px) {
   header {
     padding: 10px 3%;
+  }
+  .navbar {
+    top:64px;
   }
 
   .logo img {

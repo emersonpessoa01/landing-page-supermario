@@ -56,4 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+  const menuBtn = document.getElementById("menu-btn");
+  const navbar = document.querySelector(".navbar");
+
+  // Evento para abrir e fechar o menu ao clicar no ícone hamburger
+  menuBtn.onclick = function () {
+    navbar.classList.toggle("show");
+    menuBtn.classList.toggle("fa-times");
+  };
+  
+  // Evento para fechar o menu ao rolar a página
+  window.onscroll = function () {
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("fa-times");
+    }
+  };
 });
