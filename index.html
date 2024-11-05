@@ -10,6 +10,10 @@
     <!-- Link para o arquivo CSS local com os estilos da página -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link para a folha de estilo do Swiper, uma biblioteca para carrosséis -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Link para a folha de estilo do Font Awesome, uma biblioteca de ícones -->
+
     <title>Gaming Website Landing Page</title>
     <!-- Define o título da página que aparece na aba do navegador -->
   </head>
@@ -26,7 +30,7 @@
         <img src="images/nintendo-switch.png" alt="nintendo switch logo" height="240" width="240" />
         <!-- Exibe o logotipo do Nintendo Switch com altura e largura definidos -->
       </a>
-      <nav>
+      <nav class="navbar">
         <!-- Seção de navegação do site -->
         <ul class="nav">
           <!-- Lista de itens de navegação -->
@@ -51,13 +55,16 @@
         <!-- Botão para login -->
         <input type="text" name="" id="" />
         <!-- Campo de texto para possível entrada de dados de login -->
+         
       </div>
 
       <div class="search">
         <!-- Div para a barra de pesquisa -->
         <input type="text" id="gameInput" placeholder="Search" />
         <!-- Campo de texto para a pesquisa de jogos -->
+         
       </div>
+      <div id="menu-btn" class="fas fa-bars"></div>
     </header>
 
     <div class="swiper">
@@ -221,5 +228,7 @@
     <!-- Script da biblioteca Swiper para o funcionamento do carrossel -->
     <script src="js/app.js"></script>
     <!-- Script externo para a lógica JavaScript personalizada -->
+     <!-- Script externo para a lógica JavaScript personalizada -->
+      <script src="js/toggle.js"></script>
   </body>
 </html>
