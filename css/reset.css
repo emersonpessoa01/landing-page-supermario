@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/uni-neue");
+
+* {
+  font-family: "UniSans", "Uni Neue", "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+@font-face {
+  font-family: "UniSans";
+  src: url("../fonts/Uni\ Sans\ Regular.woff") format("woff"), url("../fonts/Uni\ Sans\ Light.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Bold.woff") format("woff"), url("../fonts/Uni\ Sans\ Bold\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Book.woff") format("woff"), url("../fonts/Uni\ Sans\ Book\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Medium.woff") format("woff"), url("../fonts/Uni\ Sans\ Medium\ Italic.woff") format("woff");
+}
+
+:root {
+  --primary: #ff0000;
+  --primary-dark:#f61212;
+}
+
+/* Define a cor vermelha como uma variável CSS chamada --primary. */
+body {
+  position: relative;
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link
@@ -36,6 +36,7 @@
       </div>
       <div class="search">
         <input type="text" id="gameInput" placeholder="Search" />
+        <i class="fas fa-search"></i>
       </div>
       <div id="menu-btn" class="fas fa-bars"></div>
     </header>
@@ -63,7 +64,7 @@
                   </div>
                   <div class="pricing">
                     <a href="#" class="buy-btn" alt="Comprar">
-                      <span class="material-symbols-outlined" id="icon">+</span>
+                      <span class="material-symbols-outlined" id="icon"><i class="fa-solid fa-plus"></i></span>
                     </a>
                     <div class="content">
                       <span class="subtitle">Super Mario Odyssey</span>
@@ -216,7 +217,7 @@
           <!-- slide 4 -->
           <article class="swiper-slide" id="slide-4">
             <figure>
-              <img src="./images/Donkey-Kong-Country-Tropical-Freeze.jpg" alt="Banner do Donkey Kong Country Tropical Freeze" />
+              <img src="/images/Donkey-Kong-Country-Tropical-Freeze.jpg" alt="Banner do Donkey Kong Country Tropical Freeze" />
             </figure>
             <div class="backscene"></div>
             <div class="banner">
@@ -233,7 +234,7 @@
                   </div>
                   <div class="pricing">
                     <a href="#" target="_blank" class="buy-btn">
-                      <span class="material-symbols-outlined" id="icon">+</span>
+                      <span class="material-symbols-outlined" id="icon"><i class="fa-solid fa-plus"></i></span>
                     </a>
                     <div class="content">
                       <span class="subtitle">Donkey Kong Country Tropical Freeze</span>
@@ -244,7 +245,7 @@
                 </div>
                 <h1 class="donkey-title">Donkey Kong</h1>
               </div>
-              <img src="assets/img/donkey-kong.png" alt="Personagem principal do Donkey Kong" />
+              <img src="images/donkey-kong.png" alt="Personagem principal do Donkey Kong" />
               <!-- Lado direito -->
               <div class="right">
                 <ul class="description">
@@ -273,6 +274,8 @@
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

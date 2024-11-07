@@ -11,7 +11,24 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       // Configura a paginação (indicadores de slide) utilizando o seletor '.swiper-pagination'.
     },
-
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoHeight: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    speed: 800,
+    coverflowEffect: {
+      rotate: 60,
+      stretch: 0,
+      modifier: 1,
+      slideShadows: true,
+    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false, // O
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -64,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navbar.classList.toggle("show");
     menuBtn.classList.toggle("fa-times");
   };
-  
+
   // Evento para fechar o menu ao rolar a página
   window.onscroll = function () {
     if (navbar.classList.contains("show")) {
