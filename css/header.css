@@ -1,121 +1,70 @@
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4%;
-  border-bottom: 1px solid #ffffff90;
-  z-index: 20;
-}
-.logo img {
-  height: 3.75rem;
-  filter: invert(1);
-  transform: transform 0.6s ease-in-out;
-  cursor: pointer;
-
-  margin: 10px 10px 10px 6.5%;
-}
-.logo:hover img {
-  transform: rotate(540deg) scale(1.2);
-  transition: transform 0.6 ease-in-out;
-}
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.navbar .navlist {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
-.navlist li {
-  position: relative;
-  list-style: none;
-  margin-right: 30px;
-}
-.navlist li a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.6s ease;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.navlist li a:hover {
-  color: var(--primary);
-}
-#login-btn {
-  margin: 10px;
-  background-color: var(--primary);
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  border: 1px solid var(--primary);
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#login-btn:hover {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-}
-.search {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: transparent;
-  border: 1px solid #ffffff90;
-  width: 140px;
-  height: 39px;
-  transition: 1s;
-  border-radius: 4px;
-}
-.search:hover {
-  width: 300px;
-  transition: 1s;
+.modal-login-header h2 {
+    color: #ff0000;
+    font-size: 2em;
+    font-weight: 400; 
 }
 
-.search input {
-  width: 80px;
-  border: none;
-  padding: 5px;
-  background-color: transparent;
-}
-.search input::placeholder {
-  font-size: 1.1em;
-  color: #fff;
-  text-transform: uppercase;
-  transform: translateX(5px);
-  font-weight: 300;
-}
-.search input:focus {
-  outline: none;
-  color: #fff;
+
+.modal-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.search .fa-search {
-  color: #ffffff90;
-  cursor: pointer;
-  margin-left: 10px;
-  border-left: 1px solid #ffffff90;
-  padding: 10px;
-  text-align: center;
+.modal-login-form input {
+    background-color: #000;
+    border: 1px solid #ff0000;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #fff;
 }
-#menu-btn {
-  /* display: none; */
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
+
+.modal-login-form input::placeholder {
+    color: #fff;
+}
+.modal-login-form label {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.modal-login-form button {
+    background-color: #ff0000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-login-form button:hover {
+    background-color: #530000;
+    color: var(--primary);
+}
+
+
+#create-btn {
+    background-color: #121212;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#create-btn:hover {
+    background-color: #fff;
+    color: var(--primary);
 }
