@@ -97,4 +97,12 @@
     line-height: 0;
     background: transparent;
   }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 25px !important;
+    height: 8px !important;
+    display: inline-block;
+    border-radius: 2px;
+    background:#fff !important;
+    
+}
   

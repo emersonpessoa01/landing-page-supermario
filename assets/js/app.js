@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
       // Configura a paginação (indicadores de slide) utilizando o seletor '.swiper-pagination'.
     },
     slidesPerView: 1,
@@ -73,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
           alert("Jogo não foi encontrado");
           break;
       }
+      gameInput.value = "";
     }
   });
 });
@@ -111,3 +113,21 @@ loginForm.addEventListener("submit", (event) => {
   successMessage.style.display = "block"; // Mostra a mensagem de sucesso
   loginForm.reset(); // Limpa o formulário após o envio
 });
+
+/* Menu Hamburger */
+const menuBtn = document.getElementById("menu-btn");
+  const navbar = document.querySelector(".navbar");
+
+  // Evento para abrir e fechar o menu ao clicar no ícone hamburger
+  menuBtn.onclick = function () {
+    navbar.classList.toggle("show");
+    menuBtn.classList.toggle("fa-times");
+  };
+
+  // Evento para fechar o menu ao rolar a página
+  window.onscroll = function () {
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("fa-times");
+    }
+  };

@@ -53,7 +53,6 @@
   .banner .right .trailer {
     position: absolute;
     bottom: 0;
-    border: 1px solid red !important;
     max-width: 100%;
   }
   .banner .right .trailer iframe {
