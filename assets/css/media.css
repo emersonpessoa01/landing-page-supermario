@@ -1,4 +1,4 @@
-@media (max-width: 1268px) {
+@media (max-width: 1024px) {
   .swiper .swiper-wrapper .swiper-slide .banner img {
     display: block;
     position: absolute;
@@ -54,18 +54,6 @@
     margin-bottom: 20px;
   }
 
-  .banner .left .features .rating .score {
-    /* font-size: 1.5rem; */
-  }
-
-  .banner .left .features .pricing .buy-btn {
-    /* font-size:1.5rem; */
-  }
-
-  .banner .left .features .pricing .buy-btn span {
-    /* font-size: 0.8rem; */
-  }
-
   .banner .left .features .rating .content h4 {
     font-size: 0.8rem;
   }
@@ -83,17 +71,16 @@
   }
 }
 @media (max-width: 640px) {
-  .modal-content {
-    margin: 60% auto;
-  }
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-    top:85% !important;
-  }
   
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    top: 85% !important;
+  }
 }
 @media (max-width: 480px) {
   header.header {
     padding: 5px !important;
   }
-  
 }
