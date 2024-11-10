@@ -1,80 +1,77 @@
+/* Estilos do modal */
+/* Estilos do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
 
-  /* Estilos do modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top:0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    width: 300px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 90%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  #loginForm label {
-    display: block;
-    margin: 10px 0 5px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  #loginForm input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #loginForm button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  #loginForm button:hover {
-    background-color: #45a049;
-  }
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  .success-message {
-    display: none;
-    color: green;
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  /* Esconder o formulário após o sucesso */
-  .hidden {
-    display: none;
-  }
-  
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#loginForm label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#loginForm input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#loginForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+#loginForm button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Esconder o formulário após o sucesso */
+.hidden {
+  display: none;
+}

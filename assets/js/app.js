@@ -79,40 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* Modal de Login */
 
-const loginBtn = document.getElementById("login-btn");
-const loginModal = document.getElementById("loginModal");
-const closeBtn = document.querySelector(".close-btn");
-const loginForm = document.getElementById("loginForm");
-const successMessage = document.getElementById("successMessage");
-
-// Abre o modal ao clicar no botão de login
-loginBtn.addEventListener("click", () => {
-  loginModal.style.display = "block";
-  loginForm.classList.remove("hidden");
-  successMessage.style.display = "none";
-});
-
-// Fecha o modal ao clicar no botão "X"
-closeBtn.addEventListener("click", () => {
-  loginModal.style.display = "none";
-});
-
-// Fecha o modal ao clicar fora dele
-window.addEventListener("click", (event) => {
-  if (event.target === loginModal) {
-    loginModal.style.display = "none";
-  }
-});
-
-// Ao submeter o formulário, exibe a mensagem de sucesso e limpa o formulário
-loginForm.addEventListener("submit", (event) => {
-  event.preventDefault(); // Previne o comportamento padrão do envio
-  loginForm.classList.add("hidden"); // Oculta o formulário
-  successMessage.style.display = "block"; // Mostra a mensagem de sucesso
-  loginForm.reset(); // Limpa o formulário após o envio
-});
 
 /* Menu Hamburger */
 

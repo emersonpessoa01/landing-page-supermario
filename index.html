@@ -9,10 +9,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Link para a folha de estilo do Swiper, uma biblioteca para carrosséis -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Gaming Website Landing Page</title>
     <!-- Define o título da página que aparece na aba do navegador -->
   </head>
@@ -296,26 +293,23 @@
     </main>
 
     <!-- Modal de Login -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2 class="title-login">Login</h2>
-      <form id="loginForm">
-        <label for="username">Usuário</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Entrar</button>
-      </form>
-      <!-- Mensagem de sucesso oculta inicialmente -->
-      <p id="successMessage" class="success-message">Login realizado com sucesso!</p>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <form id="loginForm">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Entrar</button>
+        </form>
+        <div id="successMessage" class="success-message">Login realizado com sucesso!</div>
+      </div>
     </div>
-  </div>
 
     <!-- Swipper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>
