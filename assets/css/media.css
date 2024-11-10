@@ -40,7 +40,8 @@
   .banner .left {
     position: absolute;
     margin-left: 10px;
-    top: 15vh;
+    top: 25vh;
+    height: 50vh;
   }
   .banner .left h1 {
     font-size: 7vw;
@@ -69,46 +70,7 @@
     font-size: 0.8rem;
   }
 }
-@media (max-width: 991px) {
-  #menu-btn {
-    display: block;
-  }
 
-  #menu-btn.fa-times {
-    transform: rotate(180deg);
-  }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    right: -150%;
-    background: #333;
-    width: 20rem;
-    height: calc(100vh - 10rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transition: right 0.8s ease;
-  }
-  .navbar.show {
-    right: 0;
-  }
-  .navlist {
-    flex-direction: column;
-  }
-  .navlist li {
-    margin: 1.5rem 0;
-  }
-  .navlist li a {
-    color: #fff;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  .navlist li a:hover {
-    background: #fff;
-    color: #333;
-  }
-}
 @media (max-width: 767px) {
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
@@ -119,4 +81,19 @@
   .swiper .swiper-button-prev::after {
     font-size: 20px;
   }
+}
+@media (max-width: 640px) {
+  .modal-content {
+    margin: 60% auto;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    top:85% !important;
+  }
+  
+}
+@media (max-width: 480px) {
+  header.header {
+    padding: 5px !important;
+  }
+  
 }

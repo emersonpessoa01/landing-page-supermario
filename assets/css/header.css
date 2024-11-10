@@ -6,9 +6,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 100px;
-    border-bottom: 1px solid #ffffff80;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-bottom: 1px solid #ffffff90;
     z-index: 20;
   }
   
@@ -18,7 +18,7 @@
     filter: invert(1);
     transition: transform 0.5s ease;
     cursor: pointer;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     margin: 10px 10px 10px 3%;
@@ -36,14 +36,14 @@
   }
   
   nav ul {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-content: center;
     justify-content: center;
   }
   
   nav ul li {
-    position: relative;
+    /* position: relative; */
     list-style: none;
     margin-right: 30px;
   }
@@ -77,7 +77,7 @@
     color: #fff;
   }
   .search {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +135,7 @@
     
   }
   #menu-btn {
-    display: block;
+    display: none;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
@@ -143,4 +143,47 @@
   }
   #menu-btn.color{
     color: #007bff;
+  }
+
+  @media (max-width: 991px) {
+    #menu-btn {
+      display: inline-block;
+    }
+  
+    #menu-btn.fa-times {
+      transform: rotate(180deg);
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      right: -150%; /* Mantém fora da tela inicialmente */
+      background: #333;
+      width: 20rem;
+      height: calc(100vh - 10rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transition: right 0.8s ease; /* Transição suave */
+    }
+    
+    .navbar.show {
+      right: 0; /* Traz o menu para dentro da tela */
+    }
+    
+    .navlist {
+      flex-direction: column;
+    }
+    .navlist li {
+      margin: 1.5rem 0;
+    }
+    .navlist li a {
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+    .navlist li a:hover {
+      background: #fff;
+      color: #333;
+    }
   }
