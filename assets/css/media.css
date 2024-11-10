@@ -1,0 +1,108 @@
+@media screen and (max-width: 1268px) {
+  header {
+    padding: 20px 50px;
+  }
+  header nav ul {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 300ms ease-in-out;
+  }
+
+  header nav ul li {
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f00;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner img {
+    display: block;
+    position: absolute;
+    max-width: 70%;
+    height: auto;
+    transform: translateX(-50%);
+    z-index: 1;
+    left: 50%;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide .banner .right {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .banner .right .description {
+    display: none;
+  }
+
+  .banner .right .trailer {
+    position: absolute;
+    bottom: 0;
+  }
+  .banner .right .trailer iframe {
+    max-width: 350px;
+    max-height: 250px;
+  }
+  .banner .right .trailer h2 {
+    font-size: 5vw;
+  }
+
+  .banner .left {
+    position: absolute;
+    margin-left: 10px;
+    top: 15vh;
+  }
+  .banner .left h1 {
+    font-size: 7vw;
+  }
+
+  .banner .left p {
+    font-size: 0.8rem;
+  }
+  .banner .left .features {
+    margin-bottom: 20px;
+  }
+
+  .banner .left .features .rating .score {
+    /* font-size: 1.5rem; */
+  }
+
+  .banner .left .features .pricing .buy-btn {
+    /* font-size:1.5rem; */
+  }
+
+  .banner .left .features .pricing .buy-btn span {
+    /* font-size: 0.8rem; */
+  }
+
+  .banner .left .features .rating .content h4 {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper .swiper-button-next::after,
+  .swiper .swiper-button-prev::after {
+    font-size: 20px;
+  }
+}
+
