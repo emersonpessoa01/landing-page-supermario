@@ -297,10 +297,14 @@
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <form id="loginForm">
-          <label for="username">Usuário:</label>
+          <label for="username">Email:</label>
           <input type="text" id="username" name="username" required />
+          <div class="error-message" id="usernameError">Por favor, insira um email válido.</div>
+
           <label for="password">Senha:</label>
           <input type="password" id="password" name="password" required />
+          <div class="error-message" id="passwordError">A senha deve ter pelo menos 8 caracteres, contendo letras, números e símbolos.</div>
+
           <button type="submit">Entrar</button>
         </form>
         <div id="successMessage" class="success-message">Login realizado com sucesso!</div>

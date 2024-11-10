@@ -45,6 +45,7 @@
   }
   .banner .left h1 {
     font-size: 7vw;
+    text-align: center !important;
   }
 
   .banner .left p {
