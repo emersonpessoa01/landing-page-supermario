@@ -68,13 +68,15 @@
   display: none;
   color: green;
   font-weight: bold;
-  margin-top: 15px;
+  margin: 15px;
+  text-align: center;
 }
 
 /* Esconder o formulário após o sucesso */
 .hidden {
   display: none;
 }
+/* Mensagem de erro */
 .error-message {
   color: red;
   font-size: 12px;
@@ -82,3 +84,33 @@
   margin-bottom: 10px;
 }
 
+/* Ver e esconder senha */
+.password-container {
+  position: relative;
+}
+
+#password {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-85%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+#togglePassword:hover {
+  color: #4caf50;
+}
+
+div#successMessage h3 {
+  margin: 15px;
+}

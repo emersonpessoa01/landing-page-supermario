@@ -34,6 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   
+    // Alterna a visibilidade da senha
+    const togglePassword = document.getElementById("togglePassword");
+    togglePassword.addEventListener("click", () => {
+      const type = password.type === "password" ? "text" : "password";
+      password.type = type;
+  
+      // Alterna o ícone de olho
+      togglePassword.classList.toggle("fa-eye");
+      togglePassword.classList.toggle("fa-eye-slash");
+    });
+  
     // Validação do formulário
     loginForm.addEventListener("submit", (event) => {
       event.preventDefault(); // Previne o comportamento padrão do envio
@@ -57,8 +68,13 @@ document.addEventListener("DOMContentLoaded", function () {
   
       // Se ambos os campos estiverem válidos, prossegue com o envio
       if (isValid) {
-        loginForm.classList.add("hidden");
+        loginForm.classList.add("hidden"); // Oculta o formulário
         successMessage.style.display = "block"; // Mostra a mensagem de sucesso
+  
+        // Extrai o nome do usuário (parte do e-mail antes do "@")
+        const userName = username.value.split('@')[0];
+  
+        successMessage.innerHTML = `<h3>Bem-vindo, ${userName}!</h3> <p>Login realizado com sucesso.</p>`; // Exibe o nome de usuário
         loginForm.reset(); // Limpa o formulário após o envio
       }
     });

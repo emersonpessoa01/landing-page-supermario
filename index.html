@@ -302,12 +302,15 @@
           <div class="error-message" id="usernameError">Por favor, insira um email válido.</div>
 
           <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" required />
+          <div class="password-container">
+            <input type="password" id="password" name="password" required />
+            <i id="togglePassword" class="fas fa-eye"></i>
+          </div>
           <div class="error-message" id="passwordError">A senha deve ter pelo menos 8 caracteres, contendo letras, números e símbolos.</div>
 
           <button type="submit">Entrar</button>
         </form>
-        <div id="successMessage" class="success-message">Login realizado com sucesso!</div>
+        <div id="successMessage" class="success-message"></div>
       </div>
     </div>
 
