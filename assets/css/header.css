@@ -1,4 +1,4 @@
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -88,6 +88,7 @@ header {
     width: 140px;
     height: 45px;
     border-radius: 25px;
+    margin-right: 12px
   }
   .search:hover {
     width: 300px;
@@ -130,6 +131,16 @@ header {
     margin-left: 12px;
     border-left: 1px solid #ffffff90;
     padding: 12px;
+    margin-left: 12px;
     
   }
-  
+  #menu-btn {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  #menu-btn.color{
+    color: #007bff;
+  }

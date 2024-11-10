@@ -1,30 +1,4 @@
-@media(max-width: 1268px) {
-  header {
-    padding: 20px 50px;
-  }
-  header nav ul {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-100%);
-    transition: transform 300ms ease-in-out;
-  }
-
-  header nav ul li {
-    margin: 20px 0;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    border-bottom: 1px solid #f00;
-  }
-
+@media (max-width: 1268px) {
   .swiper .swiper-wrapper .swiper-slide .banner img {
     display: block;
     position: absolute;
@@ -95,6 +69,46 @@
     font-size: 0.8rem;
   }
 }
+@media (max-width: 991px) {
+  #menu-btn {
+    display: block;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -150%;
+    background: #333;
+    width: 20rem;
+    height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: right 0.8s ease;
+  }
+  .navbar.show {
+    right: 0;
+  }
+  .navlist {
+    flex-direction: column;
+  }
+  .navlist li {
+    margin: 1.5rem 0;
+  }
+  .navlist li a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .navlist li a:hover {
+    background: #fff;
+    color: #333;
+  }
+}
 @media (max-width: 767px) {
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
@@ -106,4 +120,3 @@
     font-size: 20px;
   }
 }
-
