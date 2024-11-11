@@ -43,10 +43,14 @@
 
 #loginForm input {
   width: 100%;
-  padding: 8px;
+  padding: 12px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+#loginForm input:focus, #loginForm input:active {
+  outline: none; /* Remove a borda padrão */  
+  border: 2px solid blue;
 }
 
 #loginForm button {

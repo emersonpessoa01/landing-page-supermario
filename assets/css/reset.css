@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "UniSans", "Uni Neue", "Nunito", sans-serif;
+}
+@font-face {
+  font-family: "UniSans";
+  src: url("../fonts/Uni\ Sans\ Regular.woff") format("woff"), url("../fonts/Uni\ Sans\ Light.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Bold.woff") format("woff"), url("../fonts/Uni\ Sans\ Bold\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Book.woff") format("woff"), url("../fonts/Uni\ Sans\ Book\ Italic.woff") format("woff"),
+    url("../fonts/Uni\ Sans\ Medium.woff") format("woff"), url("../fonts/Uni\ Sans\ Medium\ Italic.woff") format("woff");
 }
 
 :root {
