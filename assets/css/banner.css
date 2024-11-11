@@ -105,7 +105,8 @@
 }
 
 .banner h1 {
-  color: #fff;
+  color: var(--primary);
+  text-shadow: 2px 2px 4px #fff;
   font-family: "Luckiest Guy", serif;
   font-size: 6em;
   letter-spacing: 10px;
@@ -123,6 +124,7 @@
   justify-content: space-around;
   align-items: flex-end;
   z-index: 100;
+  padding: 1rem 2%
 }
 /* @media (max-width: 1268px) {
   .swiper .swiper-wrapper .swiper-slide .banner .right {
@@ -167,5 +169,6 @@
 .banner .right iframe {
   max-width: 450px;
   max-height: 250px;
+  border:none;
 }
 
