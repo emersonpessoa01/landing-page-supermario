@@ -50,32 +50,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const gameInput = document.getElementById("gameInput");
-  // Seleciona o elemento de entrada de texto com o ID 'gameInput'.
+  const searchIcon = document.getElementById("searchIcon");
 
+  // Função para buscar o jogo e chamar o slide
+  function searchAndSlide() {
+    let searchGame = gameInput.value.trim().toUpperCase();
+    console.log("Valor digitado:", searchGame);
+
+    switch (searchGame) {
+      case "MARIO":
+        swiper.slideToLoop(0);
+        break;
+      case "ZELDA":
+        swiper.slideToLoop(1);
+        break;
+      case "DONKEY":
+        swiper.slideToLoop(2);
+        break;
+      case "POKEMON":
+        swiper.slideToLoop(3);
+        break;
+      default:
+        alert("Jogo não foi encontrado");
+        break;
+    }
+    gameInput.value = ""; // Limpa o campo de busca
+  }
+
+  // Lógica para pressionar Enter
   gameInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      let searchGame = gameInput.value.trim().toUpperCase();
-      console.log("Valor digitado:", searchGame);
-
-      switch (searchGame) {
-        case "MARIO":
-          swiper.slideToLoop(0);
-          break;
-        case "ZELDA":
-          swiper.slideToLoop(1);
-          break;
-        case "DONKEY":
-          swiper.slideToLoop(2);
-          break;
-        case "POKEMON":
-          swiper.slideToLoop(3);
-          break;
-        default:
-          alert("Jogo não foi encontrado");
-          break;
-      }
-      gameInput.value = "";
+      searchAndSlide();
     }
+  });
+
+  // Lógica para clicar no ícone de busca
+  searchIcon.addEventListener("click", function () {
+    searchAndSlide();
+  });
+
+  // Lógica para touch (em dispositivos móveis)
+  searchIcon.addEventListener("touchstart", function () {
+    searchAndSlide();
   });
 });
 
