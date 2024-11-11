@@ -124,11 +124,11 @@
   align-items: flex-end;
   z-index: 100;
 }
-@media (max-width: 1268px) {
+/* @media (max-width: 1268px) {
   .swiper .swiper-wrapper .swiper-slide .banner .right {
     max-width: 100%;
   }
-}
+} */
 .banner .right .description {
   padding: 30px 60px 0 0;
   margin-top: 10vh;
