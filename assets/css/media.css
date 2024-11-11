@@ -84,7 +84,7 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    top: 85% !important;
+    top: 89% !important;
   }
 }
 @media (max-width: 480px) {
