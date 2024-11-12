@@ -91,4 +91,16 @@
   header.header {
     padding: 5px !important;
   }
+  .banner .left .features .rating .score,
+  .banner .left .features .pricing .buy-btn {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 2rem !important;
+    
+  }
+}
+@media (max-width: 320px) {
+  .banner .left {
+    top: 20vh;
+  }
 }
