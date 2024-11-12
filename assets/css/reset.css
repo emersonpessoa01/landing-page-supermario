@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "UniSans", "Uni Neue", "Nunito", sans-serif;
+  line-height: 1.5;
 }
 @font-face {
   font-family: "UniSans";
@@ -25,4 +26,5 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+
 }
