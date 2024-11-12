@@ -88,12 +88,4 @@ document.addEventListener("DOMContentLoaded", function () {
   searchIcon.addEventListener("click", function () {
     searchAndSlide();
   });
-
-  // // Lógica para touch (em dispositivos móveis)
-  // searchIcon.addEventListener("touchstart", function () {
-  //   searchAndSlide();
-  // });
 });
-
-
-

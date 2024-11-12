@@ -153,6 +153,9 @@
     #menu-btn.fa-times {
       transform: rotate(180deg);
     }
+    .header{
+      justify-content:space-between;
+    }
     .navbar {
       position: absolute;
       top: 100%;
@@ -185,5 +188,11 @@
     .navlist li a:hover {
       background: #fff;
       color: #333;
+    }
+    #login-btn {
+      margin: auto;
+    }
+    .search{
+      margin: auto;
     }
   }
