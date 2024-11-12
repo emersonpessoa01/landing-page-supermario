@@ -1,6 +1,6 @@
 # Landing Page - Super Mario Games
 <div align="center" id="topo">
-  <img src="./assets/image/page-readme.png" width="auto">
+  <img src="./assets/image/page-readme.webp" width="auto">
   </div>
 
 Este projeto é uma landing page dedicada aos jogos clássicos da Nintendo, com foco na série Super Mario. Desenvolvida para proporcionar uma experiência visual atraente e informativa, a página apresenta os jogos mais icônicos da franquia, com detalhes de cada título, trailers, metascores e links de compra. A página foi criada utilizando tecnologias web modernas e é completamente responsiva, proporcionando uma navegação intuitiva tanto em dispositivos móveis quanto em desktops.
