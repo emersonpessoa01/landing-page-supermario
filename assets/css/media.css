@@ -88,6 +88,9 @@
   }
 }
 @media (max-width: 480px) {
+  header.header{
+    padding: .5rem 4% !important;
+  }
   .banner .left .features .rating .score,
   .banner .left .features .pricing .buy-btn {
     width: 70px !important;
