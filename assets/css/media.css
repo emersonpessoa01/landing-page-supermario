@@ -44,7 +44,8 @@
   .banner .left {
     position: absolute;
     margin-left: 10px;
-    top: 25vh;
+    /* top: 25vh; */
+    top: 15vh;
     height: 50vh;
   }
   .banner .left h1 {
@@ -100,9 +101,20 @@
   .logo img {
     height: 3rem !important;
   }
+  .swiper .swiper-wrapper .swiper-slide .banner img {
+    display: block;
+    position: absolute;
+    /* max-width: 250px !important; */
+    max-width: 70% !important;
+    height: auto;
+    transform: translateX(-50%);
+    z-index: 1;
+    left: 50%;
+  }
 }
 @media (max-width: 320px) {
   .banner .left {
-    top: 20vh;
+    /* top: 20vh; */
+    top: 15vh;
   }
 }
