@@ -7,14 +7,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
+    padding:.5rem 6%;
     border-bottom: 1px solid #ffffff90;
     z-index: 20;
   }
   
   .logo img {
-    max-width: 50px;
-    min-width: 50px;
+    /* max-width: 60px;
+    min-width: 60px; */
+
+    height: 4rem;
     filter: invert(1);
     transition: transform 0.5s ease;
     cursor: pointer;
@@ -103,9 +105,10 @@
     padding: 10px;
     color:#ffffff90;
     background-color: transparent;
+    text-transform: uppercase;
   }
   .search input::placeholder {
-    color: #aaa;
+    color: #fff;
     font-weight: 300;
     text-align: center;
   }
