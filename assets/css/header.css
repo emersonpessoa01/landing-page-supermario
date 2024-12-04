@@ -152,9 +152,9 @@ nav ul li a:hover {
     display: inline-block;
   }
 
-  .fas.fa-bars.fa-times {
+  /*.fas.fa-bars.fa-times {
     transform: rotate(90deg);
-  }
+  }*/
   .header {
     justify-content: space-between;
   }
