@@ -153,7 +153,7 @@ nav ul li a:hover {
   }
 
   #menu-btn.fa-times {
-    transform: rotate(180deg);
+    transform: rotate(90deg);
   }
   .header {
     justify-content: space-between;
