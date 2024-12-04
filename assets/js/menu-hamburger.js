@@ -3,11 +3,17 @@
 const menuBtn = document.getElementById("menu-btn");
 const navbar = document.querySelector(".navbar");
 
-// Função para abrir/fechar o menu
 menuBtn.addEventListener("click", function (event) {
-  event.stopPropagation(); // Impede o evento de propagação para o documento
+  event.stopPropagation(); // Impede o evento de propagação
   navbar.classList.toggle("show");
-  menuBtn.classList.toggle("fa-times");
+  
+  if (menuBtn.classList.contains("fa-times")) {
+    menuBtn.classList.remove("fa-times");
+    menuBtn.style.transform = "rotate(0deg)";
+  } else {
+    menuBtn.classList.add("fa-times");
+    menuBtn.style.transform = "rotate(90deg)";
+  }
 });
 
 // Fechar o menu ao clicar em qualquer link dentro da navbar
