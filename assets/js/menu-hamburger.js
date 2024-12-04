@@ -1,20 +1,17 @@
 /* Menu Hamburger */
 
 const menuBtn = document.getElementById("menu-btn");
-const navbar = document.querySelector(".navbar");
 
-menuBtn.addEventListener("click", function (event) {
-  event.stopPropagation(); // Impede o evento de propagação
-  navbar.classList.toggle("show");
-  
-  if (menuBtn.classList.contains("fa-times")) {
-    menuBtn.classList.remove("fa-times");
+menuBtn.addEventListener("click", function () {
+  if (menuBtn.classList.contains("rotated")) {
     menuBtn.style.transform = "rotate(0deg)";
+    menuBtn.classList.remove("rotated");
   } else {
-    menuBtn.classList.add("fa-times");
     menuBtn.style.transform = "rotate(90deg)";
+    menuBtn.classList.add("rotated");
   }
 });
+
 
 // Fechar o menu ao clicar em qualquer link dentro da navbar
 navbar.addEventListener("click", function (event) {
