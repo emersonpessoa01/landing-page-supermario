@@ -152,7 +152,7 @@ nav ul li a:hover {
     display: inline-block;
   }
 
-  #menu-btn.fa-times {
+  .fas.fa-bars.fa-times {
     transform: rotate(90deg);
   }
   .header {
